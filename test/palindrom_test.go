@@ -63,7 +63,7 @@ func TestLongestPalindromWith2CharacterPalindrom(t *testing.T) {
 	// every string contains a palindrom because a single character is a palindrom
 	expectedResult := "ss"
 
-	if result == expectedResult {
+	if result != expectedResult {
 		t.Errorf("Expected result to be '%s' but got '%s' when passing '%s'", expectedResult, result, str)
 	}
 }
